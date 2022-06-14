@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8" />  
+    <title>Image Slider</title>  
+    <link rel="stylesheet" href="css/style.css">
+</head>  
+<body>  
+    <div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img class="true" src="./assets/images/first.png"/>  
+        </div>  
+        <div class="showSlide fade">  
+            <img class="false" src="./assets/images/second.png" />  
+        </div>  
+        <div class="showSlide fade">  
+            <img class="false" src="./assets/images/third.png" />  
+              
+        </div>  
+       
+        <a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+    <script src="js/script.js"></script>
+</body> 
+</html>   
+

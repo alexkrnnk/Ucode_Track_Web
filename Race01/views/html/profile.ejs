@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title><%-title%></title>
+</head>
+
+<body>
+    <header >
+        <form action=<%- url %> method="POST">
+            <div  class="head" id="Main">
+                <ul class="hr">
+                    <li><a name = "login" href="" style="font-size:30px ;"> <%=user%></a></li>
+                    <li ><img id="Main_immage" class="image" src="<%= img %>" alt="" ></li>
+                 
+                   </div>
+                </ul>
+                <input name="go" value="GO" type = "submit" style = "float: right; margin-top: 100px; margin-right: 100px; font-size: 30px; width: 150px; background-color: blanchedalmond; border:1; border-radius: 20px;"></input>
+            </div>
+        </form>
+        <div class="input" style="margin-top: 10px;" ></div> 
+        
+    </header>
+    <script src="../js/Profile.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script>
+    </script>
+</body>
+</html>

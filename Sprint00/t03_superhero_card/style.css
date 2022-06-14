@@ -1,0 +1,88 @@
+/* Global */
+#Table{
+    display: flex;
+    flex-wrap: wrap;
+    float: left;   
+}
+
+
+img{
+    margin-top: -90px;
+    margin-left: 5px;
+    height: 182px; 
+}
+
+.text{
+    font-size: 12px;
+    text-align: right;
+    /* padding-top: 5px; */
+    padding-right: 10px;
+    color: white;
+}
+
+.text2{
+    color: rgba(255, 255,255, 0.5);
+    font-size: 9px;
+    margin-top: -10px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* div{
+    
+} */
+
+/* Captain America */
+
+#captain{
+    width: 270px;
+    height: 140px; 
+    border-radius: 5px;
+    font-family: Verdana;
+    margin-top: 47px;
+    background-image: linear-gradient(#4568DC, #B06AB3);
+    margin-left: 20px;
+}
+ 
+/* Iron Man */
+
+#iron{
+    width: 270px;
+    height: 140px; 
+    border-radius: 5px;
+    font-family: Verdana;
+    margin-top: 47px;
+    background-image: linear-gradient(#e52d27, #b31217);
+    margin-left: 20px;
+}
+
+/* Black Widow */
+
+#widow{
+    width: 270px;
+    height: 140px; 
+    border-radius: 5px;
+    font-family: Verdana;
+    margin-top: 47px;
+    background-image: linear-gradient(#000, #61045F);
+    margin-left: 20px;
+}
+
+/* Spider-Man */
+
+#spider{
+    width: 270px;
+    height: 140px; 
+    border-radius: 5px;
+    font-family: Verdana;
+    margin-top: 47px;
+    background-image: linear-gradient(#e52d27, #000);
+    margin-left: 20px;
+}
+
+#img_spider{
+    margin-top: -49px;
+    margin-left: 5px;
+    height: 182px; 
+}
+

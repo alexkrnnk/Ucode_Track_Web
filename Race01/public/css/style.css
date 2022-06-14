@@ -1,0 +1,133 @@
+
+
+
+body{
+
+    background-image:url('../img/customLogo.jpg');
+    position: flex;
+}
+.input{
+    margin-top: 200px;
+    height: 300px;
+    width: 400px;
+    border-radius: 50px;
+    background-image:url('../img/Ukraine.jpg');
+    float: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+.registration_rows
+{
+    margin-top: 50px;
+}
+.input img
+{
+    vertical-align: middle;
+    height: 25px;
+    width: 25px;
+    border-color: rgb(115, 0, 255);
+}
+.input input
+{
+    height: 30px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: rgb(115, 0, 255);
+}
+
+.input button,
+.Input_button
+{
+    width: 130px;
+    height: 30px;
+    margin-top: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-color: rgb(115, 0, 255);
+    margin-right: 10px;
+}
+.login::placeholder { color: var(--placeholder, grey); }
+.login1::placeholder { color: var(--placeholder, grey); }
+.login2::placeholder { color: var(--placeholder, grey); }
+.login_1_1::placeholder { color: var(--placeholder, grey); }
+.login_1_2::placeholder { color: var(--placeholder, grey); }
+
+#Click,
+#Click_1,
+#Click_2{
+
+    background-color: rgb(140, 255, 242);
+    border-width: 0px;
+    border-color: rgb(140, 255, 242);
+    height: 0px;
+    width: 0px;
+}
+
+a{
+    font-size:1.5em;
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    }
+.conteiner
+{
+    border-radius: 25px;
+    margin-left: 130px;
+    width: 220px;
+    background-color: rgb(200, 200, 200);
+}
+ul.hr
+{
+    margin-left: 100px;
+}
+ul.hr1 
+{
+
+    margin-top: 10px;
+
+}
+
+ul.hr li ,
+ul.hr1 li
+{
+    vertical-align: middle;
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+
+    padding: 3px; /* Поля вокруг текста */
+}
+
+
+.image,
+.Icons
+{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+}
+.button_icon,
+.Button_image1
+{
+  border: none;
+  background-color: none;
+  background: transparent;
+}
+.input10
+{
+    float: right;
+    margin-top: 300px; 
+    margin-right: 100px; 
+    font-size: 30px; 
+    width: 150px; 
+    background-color: blanchedalmond;
+    border:1; 
+    border-radius: 10px;
+}
+.Serch{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+}

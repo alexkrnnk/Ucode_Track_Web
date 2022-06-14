@@ -1,0 +1,44 @@
+table {
+    border: white;
+    text-align: center;
+}
+
+th {
+   color: white; 
+   background-color: black;
+}
+
+img {
+    border-radius: 25%;
+    width: 175px;
+    height: 175px;
+    padding-inline-end: 5px;
+    padding-inline-start: 5px;
+    padding-block: 5px;
+
+}
+
+#tr1 {
+    background-color: orange;
+}
+
+#tr2 {
+    background-color: green;
+}
+
+#tr3 {
+    background-color: blue;
+}
+
+#tr4 {
+    background-color: yellow;
+}
+
+#tr5 {
+    background-color: red;
+}
+
+#tr6 {
+    background-color: purple;
+}
+

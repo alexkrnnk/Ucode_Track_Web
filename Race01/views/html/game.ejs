@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title><%- title %></title>
+</head>
+<body>
+    <form action=<%- url %> method="POST">
+        <header class="head" style="width: 100%; height: 50px; background-color:hsl(0, 0%, 95%); margin: 0ch;  ">
+            <ul class="Gm">
+                <li><a id="Name1" style="text-decoration: none; color: black;"></a></li>
+               
+                <li><img id="img1" src="" class="image" alt="" style="text-decoration: none; color: black; "></li>
+                <li><a  style="text-decoration: none; color: black;">  HP : </a></li>
+                <li><a id="Hp1"  style="text-decoration: none; color: black;"> 5 </a></li>
+            </ul>
+        </header>
+        <div class="container" type="image" src="" alt="Submit" width="48" height="48" style="margin: 0px;">
+            <input id="Gamer1" type="image" src="" style="height: 280px; margin-top: 10px; margin-left:45%;">
+            <p id="End" style="font-size: 30px; margin: 0px; color: red; "></p>
+            <input id="Gamer2" type="image"  src="" style="height: 280px;  margin-left:45%;">
+        </div>
+    </form>
+    
+    <input id="Enter" name="go" value="GO" type = "submit" style = "float: right; margin-right: 100px; font-size: 30px; width: 100px; background-color: blanchedalmond; border:1; border-radius: 20px;"></input>
+   <br><br>
+    <footer style="width: 100%; height: 50px;background-color:hsl(0, 0%, 95%); margin-top: 10px;  ">
+        <ul class="Gm">
+            <li><a id="Name2" style="text-decoration: none; color: black;"><%=first_user%></a></li>
+           
+            <li><img id="img2" src="../img/ZSU.jpg" class="image" alt="" style="text-decoration: none; color: black; "></li>
+            <li><a  style="text-decoration: none; color: black;">  HP : </a></li>
+            <li><a id="Hp2"  style="text-decoration: none; color: black;"> 5 </a></li>
+        </ul>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+    <script>
+                       
+            var player_hp1 = 5;
+            var player_hp2 = 5;                
+                var socket = io.connect();
+
+
+
+                socket.on('img1',function (data)
+                {
+                    
+                    if(data.greeting == 1)
+                        document.getElementById('img1').setAttribute('src', '../img/ZSU.jpg');
+                    if(data.greeting == 2)
+                        document.getElementById('img1').setAttribute('src', '../img/BanderaFlag.jpg');
+                    if(data.greeting == 3)
+                        document.getElementById('img1').setAttribute('src', '../img/Capitanjpg.jpg');
+                    if(data.greeting == 4)
+                        document.getElementById('img1').setAttribute('src', '../img/Ukraine.jpgUkraine.jpg');
+
+                });
+                socket.on('img2',function (data)
+                {
+                    
+                    if(data.greeting == 1)
+                        document.getElementById('img2').setAttribute('src', '../img/ZSU.jpg');
+                    if(data.greeting == 2)
+                        document.getElementById('img2').setAttribute('src', '../img/BanderaFlag.jpg');
+                    if(data.greeting == 3)
+                        document.getElementById('img2').setAttribute('src', '../img/Capitanjpg.jpg');
+                    if(data.greeting == 4)
+                        document.getElementById('img2').setAttribute('src', '../img/Ukraine.jpg');
+                });
+
+
+                socket.on('Name1',function (data)
+                {
+                    document.getElementById('Name1').innerHTML = data.greeting;
+                });
+                socket.on('Name2',function (data)
+                {
+                    document.getElementById('Name2').innerHTML = data.greeting;
+                });
+
+
+                socket.on('player1',function (data)
+                {
+                    
+                    if(data.greeting == 0)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/0.jpg');
+                    else if (data.greeting == 1)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/1.jpg');
+                    else if (data.greeting == 2)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/2.jpg');
+                    else if (data.greeting == 3)
+                      document.getElementById('Gamer1').setAttribute('src', '../img/img/3.jpg');
+                    else if (data.greeting == 4)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/4.jpg');
+                    else if (data.greeting == 5)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/5.jpg');
+                    else if (data.greeting == 6)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/6.jpg');
+                    else if (data.greeting == 7)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/7.jpg');
+                    else if (data.greeting == 8)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/8.jpg');
+                    else if (data.greeting == 9)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/9.jpg');
+                    else if (data.greeting == 10)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/10.jpg');
+                    else if (data.greeting == 11)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/11.jpg');
+                    else if (data.greeting == 12)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/12.jpg');
+                    else if (data.greeting == 13)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/13.jpg');
+                    else if (data.greeting == 14)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/14.jpg');
+                    else if (data.greeting == 15)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/15.jpg');
+                    else if (data.greeting == 16)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/16.jpg');
+                    else if (data.greeting == 17)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/17.jpg');
+                    else if (data.greeting == 18)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/18.jpg');
+                    else if (data.greeting == 19)
+                        document.getElementById('Gamer1').setAttribute('src', '../img/img/19.jpg');
+                })
+                socket.on('player2',function (data)
+                {
+                    if(data.greeting == 0)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/0.jpg');
+                    else if (data.greeting == 1)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/1.jpg');
+                    else if (data.greeting == 2)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/2.jpg');
+                    else if (data.greeting == 3)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/3.jpg');
+                    else if (data.greeting == 4)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/4.jpg');
+                    else if (data.greeting == 5)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/5.jpg');
+                    else if (data.greeting == 6)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/6.jpg');
+                    else if (data.greeting == 7)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/7.jpg');
+                    else if (data.greeting == 8)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/8.jpg');
+                    else if (data.greeting == 9)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/9.jpg');
+                    else if (data.greeting == 10)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/10.jpg');
+                    else if (data.greeting == 11)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/11.jpg');
+                    else if (data.greeting == 12)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/12.jpg');
+                    else if (data.greeting == 13)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/13.jpg');
+                    else if (data.greeting == 14)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/14.jpg');
+                    else if (data.greeting == 15)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/15.jpg');
+                    else if (data.greeting == 16)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/16.jpg');
+                    else if (data.greeting == 17)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/17.jpg');
+                    else if (data.greeting == 18)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/18.jpg');
+                    else if (data.greeting == 19)
+                        document.getElementById('Gamer2').setAttribute('src', '../img/img/19.jpg');
+                })
+
+                socket.on('decider',function (data)
+                {
+                    if(data.greeting == 1)
+                    {
+                        player_hp1--;
+                        document.getElementById('Hp1').innerHTML = player_hp1;
+                    }
+                    else if(data.greeting == 2)
+                    {
+                        player_hp2--;
+                        document.getElementById('Hp2').innerHTML = player_hp2;
+                    }
+
+                })
+                document.getElementById('Enter').onclick=()=>
+                {
+                    socket.emit('greeting',{response: "bib"})
+                }
+            
+                
+            
+                
+    </script>
+</body>
+</html>

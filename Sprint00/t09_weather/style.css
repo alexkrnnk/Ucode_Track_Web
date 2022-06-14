@@ -1,0 +1,21 @@
+div{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+div:hover{
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.data{
+    font-family: 400;
+    font-size: 1.5em;
+    background-color: rgb(94, 197, 231);
+}
+
+.temperature{
+    font-family: 700;
+    font-size: 2em;
+}
+

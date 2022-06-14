@@ -1,0 +1,89 @@
+.container {
+    display: flex; 
+    position: relative;
+    width: 97vw; 
+    height: 97vh;
+    /* border: 2px solid pink; */
+
+  }
+
+  .circle, .circle:after {
+    display: block; 
+    position: absolute; 
+    top: calc(100% - 60%); 
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    width: 100px; 
+    height: 100px;
+    -webkit-border-radius: 60px; 
+    -moz-border-radius: 60px; 
+    border-radius: 60px;
+    -webkit-animation: 10s infinite linear circle;
+    -moz-animation: 10s infinite linear circle;
+    animation: 10s infinite linear circle;
+    
+  }
+
+  .circle:after {
+    content: ""; display: block; top: 0; background: green;
+  }
+  
+  /*Анимация движения круга*/
+  @-moz-keyframes circle {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 60px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  @keyframes circle {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: calc(100% - 60px);
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+
+  .circle:hover:after {
+    -webkit-animation: 2s circle__hover;
+    -moz-animation: 2s circle__hover;
+    animation: 2s circle__hover;
+    background-color: red;
+    transition: background-color 2s;
+  }
+
+
+  
+  /* Анимация смены цвета круга
+  @-moz-keyframes circle__hover {
+    0% {
+        background-color: red;
+       transition: background-color 2s;
+    }
+    100% {
+        background-color: red;
+        transition: background-color 2s;
+    }
+  }
+  @keyframes circle__hover {
+    0% {
+        background-color: red;
+        transition: background-color 2s;
+    }
+    100% {
+        background-color: red;
+        transition: background-color 2s;
+    }
+  } */
+  
+  

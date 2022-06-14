@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/style.css">
+        <title><%-title%></title>
+    </head>
+        <div class="input" >
+            <form  action=<%- url %> method="POST">
+                <input class="login" id="Login" type="text" name="login" placeholder="Enter your login" style="margin-right: 30px;"/>
+                <input class="login1" id ="password_1" type="password" name="password" placeholder="Enter your password" style="margin-right: 30px;"/>
+                <input class="login2" id ="password_2" type="password" name="confirm_password" placeholder="Repeat your password" style="margin-right: 30px;"/>
+                <div class="checkbox">
+                    <label style="margin-left: 0;">
+                      <input type="radio" class="radio_first" id="first_radio" value="1" name="fooby" /></label>
+                      <img src="../img/ZSU.jpg" style="width: 50px; height: 50px; border: 2px solid black;"> 
+                    <label >
+                      <input type="radio" class="radio_second"  id="second_radio" value="2" name="fooby" /></label>
+                      <img src="../img/BanderaFlag.jpg" style="width: 50px; height: 50px; border: 2px solid black;"> 
+                    <label >
+                      <input type="radio" class="radio_third"  id="third_radio" value="3" name="fooby" /></label>
+                      <img src="../img/Capitanjpg.jpg" style="width: 50px; height: 50px; border: 2px solid black;"> 
+                      <label >
+                        <input type="radio" class="radio_fourth"  id="fourth_radio" value="4" name="fooby" /></label>
+                        <img src="../img/Ukraine.jpg" style="width: 50px; height: 50px; border: 2px solid black;"> 
+                  </div>
+                
+                <input name = "back" type = "submit" value = "Back" style=" width: 130px; height: 30px; margin-right: 10px;" id="Okey" />
+                <input name = "submit" type = "submit" value = "Submit" style=" width: 130px; height: 30px; margin-right: 35px;" />
+            </form>
+        </div>
+        <script type="module" src="../../app.js"></script>
+        <script type="module" src="../js/Registration_form.js"></script>
+    </body>
+
+</html>

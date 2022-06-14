@@ -1,0 +1,59 @@
+.btncontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+textarea{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 5px 5px 5px 5px;
+    border: 3px solid #65cecb;
+}
+
+textarea:hover{
+    border: 3px solid #65cecb;
+}
+
+.firstcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 57.3%;
+    height: 30em;
+    background-color: #f0f0f0;
+    margin-top: 1em;
+    align-items: center;
+}
+
+.btntext1,
+.btntext2{
+    font-size: 1.3em;
+    font-family: Arial;
+}
+
+.btntext1{
+    color: white;
+}
+
+.btntext3{
+    margin-top: -20em;
+    margin-left: 10em;
+    color: #486880;
+}
+
+.add{
+    background-color: #65cecb;
+}
+
+
+button{
+    height: 4em;
+    width: 11em;
+    border-radius: 7%;
+    border: none;
+    
+}

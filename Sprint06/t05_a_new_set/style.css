@@ -1,0 +1,28 @@
+.output {
+    width: calc(100% - 10px);
+    height: 400px;
+    background-color: rgb(124, 110, 110);
+}
+ 
+
+
+fieldset {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 2px solid gray;
+    height: 200px;
+}
+
+fieldset.powers {
+    height: 80px;
+}
+
+fieldset.OriginPowers {
+    height: 40px;
+}
+
+#age {
+    width: 30px;
+}
+

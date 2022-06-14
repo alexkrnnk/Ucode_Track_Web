@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%- title %></title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+    <div class="input">
+        <form action=<%- url %> method="POST">
+                <input type="text" name="login" placeholder="Enter your login" style=" margin-top: 50px; margin-right:20px;"    />
+
+                <input type="text" name="password" placeholder="Enter your password" style=" margin-top: 30px; margin-right:20px;" />
+
+                <!-- отправка в бд -->
+            <input class="Input_button" id="Enter" type = "submit" value = "Enter" name="enter" style=" width: 130px; height: 30px; margin-top: 30px; margin-right:20px;"  />
+            <input name="reg" class="Input_button"  type = "submit" value = "Register" style=" width: 130px; height: 30px; margin-top: 30px; margin-right:25px;"  />
+           
+        </form>
+        
+    </div>
+    <script type="module" src="../../app.js"></script>
+</body>
+</html>

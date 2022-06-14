@@ -1,0 +1,9 @@
+.image{
+    padding-left: 50%;
+    padding-top: 20%;
+}
+
+.image:hover{
+    transform: rotate(-30deg);
+}
+

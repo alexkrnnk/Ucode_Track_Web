@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS `project` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+USE project;
+
+CREATE TABLE IF NOT EXISTS user (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    login VARCHAR(15) UNIQUE NOT NULL,
+    password VARCHAR(30) NOT NULL,
+    number INT(1),
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+ 
+INSERT INTO `user` (`id`, `username`, `password`) VALUES (2, 'aboba', 'aboba');

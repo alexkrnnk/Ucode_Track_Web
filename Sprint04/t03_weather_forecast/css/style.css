@@ -1,0 +1,18 @@
+#currentImage{
+    
+    margin-left: auto;
+    margin-left: 5.4em;
+   
+   
+}
+
+.weather{
+    border: 3px solid black;
+    border-radius: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width:15%;
+    border: 2px solid black;
+}
+
+

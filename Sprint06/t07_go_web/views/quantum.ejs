@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GO web</title>
+
+    <!-- CSS (load bootstrap from a CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body { padding-top:50px; }
+    </style>
+</head>
+<body class="container">
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Learning EJS, brou</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Normal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/quantum">Quantum</a>
+          </li>
+        </ul>
+      </nav>
+</header>
+
+<main>
+    <div class="jumbotron">
+        <h1>Lets find out IN QUANTUM ????</h1>
+        <p>So, how many times has passed since 1939 in QUANTUM space?</p>
+        
+        <strong><%= dDateyears %> years <%= dDatemonth %> months <%= dDatedays %> days</strong>
+        
+    </div>
+</main>
+
+<footer>
+    <p class="text-center text-muted">© Copyright 2022 The Awesome Man</p>
+</footer>
+
+</body>
+</html>
